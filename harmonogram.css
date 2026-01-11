@@ -1,0 +1,40 @@
+.harmonogram-container1 {
+  display: contents;
+}
+ 
+.harmonogram-thq-wedding-timeline-section-elm {
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.harmonogram-thq-section-title-elm {
+  width: 535px;
+  height: 84px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.harmonogram-container2 {
+  display: none;
+}
+ 
+.harmonogram-container3 {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .harmonogram-thq-section-title-elm {
+    width: 498px;
+    height: 82px;
+    align-self: center;
+    text-align: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .harmonogram-thq-section-title-elm {
+    width: 446px;
+    height: 58px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,75 @@
+.wedding-form-container1 {
+  display: contents;
+}
+ 
+.wedding-form-thq-wedding-form-section-elm {
+  background-color: transparent;
+}
+ 
+.wedding-form-thq-wedding-form-content-elm {
+  height: 1008px;
+}
+ 
+.wedding-form-thq-wedding-form-header-elm {
+  height: 403px;
+  display: flex;
+  justify-content: flex-start;
+}
+ 
+.wedding-form-thq-hero-title-elm {
+  height: 167px;
+}
+ 
+.wedding-form-thq-wedding-form-input-elm {
+  border-color: #cfd2c4;
+}
+ 
+.wedding-form-thq-wedding-form-select-elm1 {
+  border-color: #cfd2c4;
+}
+ 
+.wedding-form-thq-wedding-form-select-elm2 {
+  border-color: #cfd2c4;
+}
+ 
+.wedding-form-thq-wedding-form-select-elm3 {
+  border-color: #cfd2c4;
+}
+ 
+.wedding-form-thq-wedding-form-textarea-elm {
+  border-color: #cfd2c4;
+}
+ 
+.wedding-form-container2 {
+  display: none;
+}
+ 
+.wedding-form-container3 {
+  display: contents;
+}
+ 
+
+ 
+@media(max-width: 991px) {
+  .wedding-form-thq-wedding-form-header-elm {
+    height: 323px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .wedding-form-thq-wedding-form-header-elm {
+    height: 267px;
+  }
+  .wedding-form-thq-hero-title-elm {
+    height: 121px;
+  }
+  .wedding-form-thq-btn-elm1 {
+    border-radius: var(--border-radius-xl);
+  }
+}
+ 
+@media(max-width: 479px) {
+  .wedding-form-thq-section-content-elm1 {
+    text-align: left;
+  }
+}

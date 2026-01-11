@@ -1,0 +1,21 @@
+.angielskiewyjscie-container1 {
+  display: contents;
+}
+ 
+.angielskiewyjscie-thq-section-title-elm {
+  text-align: center;
+}
+ 
+.angielskiewyjscie-container2 {
+  display: none;
+}
+ 
+.angielskiewyjscie-container3 {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .angielskiewyjscie-thq-section-title-elm {
+    text-align: center;
+  }
+}

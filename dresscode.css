@@ -1,0 +1,42 @@
+.dresscode-container1 {
+  display: contents;
+}
+ 
+.dresscode-thq-wedding-timeline-section-elm {
+  justify-content: space-between;
+}
+ 
+.dresscode-thq-wedding-timeline-intro-elm {
+  align-self: center;
+}
+ 
+.dresscode-thq-section-title-elm {
+  align-self: center;
+  text-align: center;
+}
+ 
+.dresscode-container2 {
+  display: none;
+}
+ 
+.dresscode-container3 {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .dresscode-thq-section-title-elm {
+    text-align: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .dresscode-text2 {
+    font-style: italic;
+  }
+  .dresscode-text5 {
+    font-style: italic;
+  }
+  .dresscode-text6 {
+    font-style: italic;
+  }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Salty Capital Mallard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Lora;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.03em;
+        line-height: 1.7;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./wedding-form.css" rel="stylesheet" />
+      <div class="wedding-form-container1 wedding-form">
+        <section
+          class="wedding-form-thq-wedding-form-section-elm wedding-form-section"
+        >
+          <div class="wedding-form-container">
+            <div class="wedding-form-grid">
+              <div
+                class="wedding-form-thq-wedding-form-content-elm wedding-form-content"
+              >
+                <header
+                  class="wedding-form-thq-wedding-form-header-elm wedding-form-header"
+                >
+                  <h1 class="wedding-form-thq-hero-title-elm hero-title">
+                    Ankieta
+                  </h1>
+                  <p
+                    class="section-content wedding-form-thq-section-content-elm1"
+                  >
+                    <span>
+                      Prosimy o wypełnienie ankiety dla każdej osoby osobno.
+                    </span>
+                    <br />
+                    <span>
+                      Nie obiecujemy, ale postaramy się spełnić wszystkie Wasze
+                      preferencje jedzeniowe.
+                    </span>
+                  </p>
+                </header>
+              </div>
+              <div class="wedding-form-card-wrapper">
+                <div class="wedding-form-card">
+                  <form
+                    id="weddingRSVP"
+                    action="/submit"
+                    method="POST"
+                    data-form-id="52d96de9-7698-4925-ae1c-4962160ac51c"
+                    class="wedding-form-element"
+                  >
+                    <div class="wedding-form-field-group">
+                      <label for="full-name" class="wedding-form-label">
+                        Pełne imię i nazwisko
+                      </label>
+                      <input
+                        type="text"
+                        id="full-name"
+                        name="pene imi i nazwisko"
+                        required="true"
+                        minlength="2"
+                        placeholder="Mariusz van Beethoven"
+                        data-form-field-id="full-name"
+                        class="wedding-form-thq-wedding-form-input-elm wedding-form-input"
+                      />
+                    </div>
+                    <div class="wedding-form-field-group">
+                      <label class="wedding-form-label">
+                        Świętujesz z nami?
+                      </label>
+                      <select
+                        id="guest-count"
+                        name="czy jesz miso"
+                        required="true"
+                        data-form-field-id="guest-count"
+                        class="wedding-form-thq-wedding-form-select-elm1 wedding-form-select"
+                      >
+                        <option value="Tak" selected="">Tak</option>
+                        <option value="Nie">Nie</option>
+                      </select>
+                    </div>
+                    <div class="wedding-form-field-group">
+                      <label for="guest-count" class="wedding-form-label">
+                        Czy potrzebujesz transport na miejsce Wesela?
+                      </label>
+                      <select
+                        id="guest-count"
+                        name="czy potrzebujesz transport na miejsce wesela"
+                        required="true"
+                        data-form-field-id="guest-count"
+                        class="wedding-form-thq-wedding-form-select-elm2 wedding-form-select"
+                      >
+                        <option value="Tak" selected="">Tak</option>
+                        <option value="Nie">Nie</option>
+                      </select>
+                    </div>
+                    <div class="wedding-form-field-group">
+                      <label for="guest-count" class="wedding-form-label">
+                        Czy jesz mięso?
+                      </label>
+                      <select
+                        id="guest-count"
+                        name="czy potrzebujesz transport na miejsce wesela"
+                        required="true"
+                        data-form-field-id="guest-count"
+                        class="wedding-form-thq-wedding-form-select-elm3 wedding-form-select"
+                      >
+                        <option value="Tak" selected="">Tak</option>
+                        <option value="Nie">Nie</option>
+                        <option value="Nie, ale jem ryby">
+                          Nie, ale jem ryby
+                        </option>
+                        <option value="Jestem weganką/weganinem">
+                          New Option
+                        </option>
+                      </select>
+                    </div>
+                    <label for="dietary" class="wedding-form-label">
+                      Czy posiadasz nietolerancje/alergie?
+                    </label>
+                    <textarea
+                      id="dietary"
+                      name="czy posiadasz nietolerancjealergie"
+                      placeholder="Np. Tak, mam alergię na orzechy"
+                      data-form-field-id="dietary"
+                      class="wedding-form-thq-wedding-form-textarea-elm wedding-form-textarea"
+                    ></textarea>
+                    <button
+                      id="thq_button_3v5u"
+                      name="button"
+                      type="submit"
+                      data-form-field-id="thq_button_3v5u"
+                      class="btn btn-primary btn-lg wedding-form-submit wedding-form-thq-btn-elm1"
+                    >
+                      <span>Gotowe</span>
+                      <svg
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M5 12h14m-7-7l7 7l-7 7"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                  </form>
+                  <div
+                    id="formSuccess"
+                    aria-hidden="true"
+                    class="wedding-form-success"
+                  >
+                    <div class="wedding-form-success-content">
+                      <svg
+                        width="48"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="48"
+                        viewBox="0 0 24 24"
+                        class="wedding-form-success-icon"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <circle r="10" cx="12" cy="12"></circle>
+                          <path d="m9 12l2 2l4-4"></path>
+                        </g>
+                      </svg>
+                      <h3 class="section-title">Thank You!</h3>
+                      <p class="section-content">
+                        Your RSVP has been received. We can't wait to see you
+                        there!
+                      </p>
+                      <button
+                        type="button"
+                        class="btn-sm btn btn-outline wedding-form-reset"
+                      >
+                        Submit another
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="wedding-form-container2">
+          <div class="wedding-form-container3">
+            <script defer="" data-name="wedding-form-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const rsvpForm = document.getElementById("weddingRSVP")
+                  const successMessage = document.getElementById("formSuccess")
+                  const resetButton = document.querySelector(".wedding-form-reset")
+
+                  if (rsvpForm) {
+                    rsvpForm.addEventListener("submit", (e) => {
+                      // Check native validation
+                      if (!rsvpForm.checkValidity()) {
+                        return
+                      }
+
+                      // UX enhancement: Show success state without full page reload
+                      // The form still performs native submission if action is set correctly
+                      // For this component demo, we'll simulate the success visual
+
+                      e.preventDefault() // Prevent actual jump for demo purposes
+
+                      rsvpForm.style.opacity = "0"
+                      rsvpForm.style.transform = "translateY(-20px)"
+
+                      setTimeout(() => {
+                        rsvpForm.style.display = "none"
+                        successMessage.style.display = "flex"
+                        successMessage.setAttribute("aria-hidden", "false")
+
+                        // Trigger small animation for success state
+                        setTimeout(() => {
+                          successMessage.style.opacity = "1"
+                          successMessage.style.transform = "translateY(0)"
+                        }, 50)
+                      }, 400)
+                    })
+                  }
+
+                  if (resetButton) {
+                    resetButton.addEventListener("click", () => {
+                      successMessage.style.opacity = "0"
+                      successMessage.style.transform = "translateY(20px)"
+
+                      setTimeout(() => {
+                        successMessage.style.display = "none"
+                        successMessage.setAttribute("aria-hidden", "true")
+
+                        rsvpForm.reset()
+                        rsvpForm.style.display = "flex"
+
+                        setTimeout(() => {
+                          rsvpForm.style.opacity = "1"
+                          rsvpForm.style.transform = "translateY(0)"
+                        }, 50)
+                      }, 400)
+                    })
+                  }
+
+                  // Real-time validation visual feedback
+                  const inputs = rsvpForm.querySelectorAll(".wedding-form-input, .wedding-form-textarea")
+                  inputs.forEach((input) => {
+                    input.addEventListener("blur", () => {
+                      if (input.value.length > 0) {
+                        if (input.checkValidity()) {
+                          input.style.borderColor = "var(--color-primary)"
+                        } else {
+                          input.style.borderColor = "#e74c3c"
+                        }
+                      } else {
+                        input.style.borderColor = "color-mix(in oklab, var(--color-on-surface) 20%, transparent)"
+                      }
+                    })
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

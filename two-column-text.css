@@ -1,0 +1,134 @@
+.two-column-text-container1 {
+  display: contents;
+}
+ 
+.two-column-text-thq-two-column-text-section-elm {
+  height: 2083px;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: transparent;
+}
+ 
+.two-column-text-thq-two-column-text-container-elm {
+  height: 1297px;
+}
+ 
+.two-column-text-thq-two-column-text-grid-elm {
+  height: 1683px;
+}
+ 
+.two-column-text-text11 {
+  font-style: italic;
+  text-transform: capitalize;
+}
+ 
+.two-column-text-text56 {
+  text-align: left;
+}
+ 
+.two-column-text-thq-wedding-timeline-vertical-elm {
+  width: 463px;
+  display: flex;
+  position: static;
+}
+ 
+.two-column-text-container2 {
+  display: none;
+}
+ 
+.two-column-text-container3 {
+  display: contents;
+}
+ 
+.two-column-text-fragment1 {
+  display: contents;
+}
+ 
+.two-column-text-text57 {
+  display: inline-block;
+}
+ 
+.two-column-text-fragment2 {
+  display: contents;
+}
+ 
+.two-column-text-text58 {
+  display: inline-block;
+}
+ 
+.two-column-text-fragment3 {
+  display: contents;
+}
+ 
+.two-column-text-text59 {
+  display: inline-block;
+}
+ 
+.two-column-text-fragment4 {
+  display: contents;
+}
+ 
+.two-column-text-text60 {
+  display: inline-block;
+}
+ 
+.two-column-text-fragment5 {
+  display: contents;
+}
+ 
+.two-column-text-text61 {
+  display: inline-block;
+}
+ 
+
+ 
+@media(max-width: 1600px) {
+  .two-column-text-thq-two-column-text-section-elm {
+    height: 1760px;
+    padding-top: 38px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .two-column-text-thq-two-column-text-container-elm {
+    height: 1513px;
+    align-self: flex-start;
+  }
+  .two-column-text-thq-two-column-text-grid-elm {
+    height: 1698px;
+  }
+  .two-column-text-text37 {
+    font-style: italic;
+  }
+  .two-column-text-text39 {
+    font-style: italic;
+  }
+}
+ 
+@media(max-width: 1200px) {
+  .two-column-text-thq-two-column-text-section-elm {
+    height: 2269px;
+    padding-top: var(--dl-layout-space-unit);
+  }
+}
+ 
+@media(max-width: 991px) {
+  .two-column-text-thq-two-column-text-section-elm {
+    padding-top: 11px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .two-column-text-thq-two-column-text-section-elm {
+    padding-top: var(--dl-layout-space-unit);
+  }
+}
+ 
+@media(max-width: 479px) {
+  .two-column-text-thq-two-column-text-section-elm {
+    height: 2739px;
+    align-items: flex-start;
+    padding-top: 0px;
+  }
+}
