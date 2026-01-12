@@ -222,7 +222,7 @@
             <div class="g-recaptcha" data-sitekey="6LdfFkgsAAAAABv-Ix7GLaJ2YZXDCLVpCs0MXkXI" style="margin: 20px 0;"></div>
 
             <div class="u-align-left u-form-group">
-              <button type="submit" class="u-btn u-btn-submit u-button-style">Gotowe</button>
+              <button type="submit" class="u-btn u-btn-submit u-button-style" style="border:none; cursor:pointer;">Gotowe</button>
             </div>
 
             <div class="u-form-send-message u-form-send-success" style="display:none; color: green; margin-top: 20px;">
@@ -254,29 +254,30 @@
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    
+    console.log("Formularz wysłany - start!"); // ZOBACZYSZ TO W KONSOLI
+
     const captchaResponse = grecaptcha.getResponse()
     if (captchaResponse.length === 0) {
-      alert("Zaznacz 'Nie jestem robotem'!")
+      alert("Proszę zaznaczyć 'Nie jestem robotem'!")
       return
     }
 
     submitBtn.innerText = "Wysyłanie..."
-    submitBtn.disabled = true
-
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
+        console.log("Sukces!", response); // ZOBACZYSZ TO W KONSOLI
         successMsg.style.display = "block"
-        errorMsg.style.display = "none"
         form.reset()
         grecaptcha.reset()
         submitBtn.innerText = "Gotowe"
-        submitBtn.disabled = false
       })
       .catch(error => {
+        console.error('Błąd wysyłki!', error.message); // ZOBACZYSZ TO W KONSOLI
         errorMsg.style.display = "block"
-        submitBtn.innerText = "Błąd - spróbuj ponownie"
-        submitBtn.disabled = false
+        submitBtn.innerText = "Spróbuj ponownie"
       })
   })
 </script>
+	  
+</body></html>
