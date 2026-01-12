@@ -182,102 +182,95 @@
       </div>
     </section>
 	  
-<section class="u-clearfix u-container-align-center u-section-7" id="sec-517b">
-  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-    <div class="custom-expanded u-container-style u-gradient u-group u-group-1">
-      <div class="u-container-layout u-container-layout-1">
-        <h3 class="u-text u-text-1">ANKIETA</h3>
-        <p class="u-text u-text-2">Będziemy wdzięczni za wypełnienie ankiety dla każdego osobno.<br> Nie obiecujemy, ale postaramy się spełnić wszystkie
+<section id="ankieta-sekcja" style="padding: 50px 0; background: #f5eee6;">
+  <div style="max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;">
+    <h3 style="font-family: Cinzel, serif;">ANKIETA</h3>
+    <p>Będziemy wdzięczni za wypełnienie ankiety dla każdego osobno.<br> Nie obiecujemy, ale postaramy się spełnić wszystkie
                           Wasze preferencje jedzeniowe</p>
-        
-        <div class="custom-expanded u-form u-form-radios-spacing-10 u-form-1">
-          <form id="wedding-form" style="padding: 10px;">
-            
-            <p>Imię i Nazwisko</p>
-            <input type="text" name="name" class="u-input u-input-rectangle" required placeholder="Mariusz van Beethoven">
 
-            <p>Świętujesz z nami?</p>
-            <select name="obecny" class="u-input u-input-rectangle" required>
-              <option value="Tak">Tak</option>
-              <option value="Nie">Nie</option>
-            </select>
-
-            <p>Czy potrzebujewsz transportu na miejsce Wesela?</p>
-            <select name="transport" class="u-input u-input-rectangle" required>
-              <option value="Tak">Tak</option>
-              <option value="Nie">Nie</option>
-            </select>
-
-            <p>Czy jesz mięso?</p>
-            <select name="meat" class="u-input u-input-rectangle" required>
-              <option value="Tak">Tak</option>
-              <option value="Nie">Nie</option>
-              <option value="Ryba">Nie, ale jem rybę</option>
-              <option value="Weganska">Jestem weganką/weganinem</option>
-            </select>
-
-            <p>Czy masz alergie/nietolerancje?</p>
-            <textarea name="allergies" class="u-input u-input-rectangle" rows="3"></textarea>
-
-            <div class="g-recaptcha" data-sitekey="6LdfFkgsAAAAABv-Ix7GLaJ2YZXDCLVpCs0MXkXI" style="margin: 20px 0;"></div>
-
-            <div class="u-align-left u-form-group">
-              <button type="submit" class="u-btn u-btn-submit u-button-style" style="border:none; cursor:pointer;">Gotowe</button>
-            </div>
-
-            <div class="u-form-send-message u-form-send-success" style="display:none; color: green; margin-top: 20px;">
-              Dziękujemy! Widzimy się w Wiejcach!
-            </div>
-            <div class="u-form-send-error u-form-send-message" style="display:none; color: red; margin-top: 20px;">
-              Coś poszło nie tak. Spróbuj ponownie.
-            </div>
-
-          </form>
-        </div>
+    <form id="wedding-form" style="text-align: left; margin-top: 30px;">
+      
+      <div style="margin-bottom: 15px;">
+        <label>Imię i Nazwisko</label>
+        <input type="text" name="name" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required placeholder="Mariusz van Beethoven">
       </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Świętujesz z nami?</label>
+        <select name="obecny" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required>
+          <option value="Tak">Tak</option>
+          <option value="Nie">Nie</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Czy potrzebujewsz transportu na miejsce Wesela?</label>
+        <select name="transport" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required>
+          <option value="Tak">Tak</option>
+          <option value="Nie">Nie</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Czy jesz mięso?</label>
+        <select name="meat" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required>
+          <option value="Tak">Tak</option>
+          <option value="Nie">Nie</option>
+          <option value="Ryba">Nie, ale jem rybę</option>
+          <option value="Weganska">Jestem weganką/weganinem</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <label>Masz alergie/nietolerancje?</label>
+        <textarea name="allergies" style="width: 100%; padding: 10px; border: 1px solid #ccc;" rows="3"></textarea>
+      </div>
+
+      <div class="g-recaptcha" data-sitekey="6LdfFkgsAAAAABv-Ix7GLaJ2YZXDCLVpCs0MXkXI" style="margin-bottom: 20px;"></div>
+
+      <button type="submit" id="submit-btn" style="width: 100%; padding: 15px; background: #d4a373; color: white; border: none; cursor: pointer; font-weight: bold;">
+        Gotowe
+      </button>
+
+    </form>
+    
+    <div id="success-msg" style="display:none; color: green; font-weight: bold; margin-top: 20px;">
+      Dziękujemy! Widzimy się w Wiejcach!
     </div>
   </div>
 </section>
-
-<footer class="u-align-center u-clearfix u-custom-color-1 u-footer" id="footer">
-  <div class="u-clearfix u-sheet u-sheet-1">
-    <p class="u-small-text u-text-1">AG '26</p>
-  </div>
-</footer>
-
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby1K_4ozPPtr84d0hwbJgHyKDL-vDk4OJLIBNtQpRxgY__b6ohGFPTS1KYHbAqecNwz/exec'
-  const form = document.getElementById('wedding-form')
-  const successMsg = document.querySelector('.u-form-send-success')
-  const errorMsg = document.querySelector('.u-form-send-error')
-  const submitBtn = document.querySelector('.u-btn-submit')
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    console.log("Formularz wysłany - start!"); // ZOBACZYSZ TO W KONSOLI
-
-    const captchaResponse = grecaptcha.getResponse()
-    if (captchaResponse.length === 0) {
-      alert("Proszę zaznaczyć 'Nie jestem robotem'!")
-      return
+  document.getElementById('wedding-form').onsubmit = function(e) {
+    e.preventDefault();
+    
+    const btn = document.getElementById('submit-btn');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby1K_4ozPPtr84d0hwbJgHyKDL-vDk4OJLIBNtQpRxgY__b6ohGFPTS1KYHbAqecNwz/exec';
+    
+    // 1. Sprawdź reCAPTCHA
+    const captcha = grecaptcha.getResponse();
+    if (captcha.length === 0) {
+      alert("Proszę zaznaczyć 'Nie jestem robotem'!");
+      return;
     }
 
-    submitBtn.innerText = "Wysyłanie..."
-    
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        console.log("Sukces!", response); // ZOBACZYSZ TO W KONSOLI
-        successMsg.style.display = "block"
-        form.reset()
-        grecaptcha.reset()
-        submitBtn.innerText = "Gotowe"
+    // 2. Zmień wygląd przycisku
+    btn.innerText = "WYSYŁANIE...";
+    btn.disabled = true;
+
+    // 3. Wyślij dane
+    fetch(scriptURL, { method: 'POST', body: new FormData(this) })
+      .then(res => {
+        document.getElementById('success-msg').style.display = 'block';
+        document.getElementById('wedding-form').style.display = 'none';
+        alert("Wysłano pomyślnie!");
       })
-      .catch(error => {
-        console.error('Błąd wysyłki!', error.message); // ZOBACZYSZ TO W KONSOLI
-        errorMsg.style.display = "block"
-        submitBtn.innerText = "Spróbuj ponownie"
-      })
-  })
+      .catch(err => {
+        alert("Błąd: " + err.message);
+        btn.innerText = "SPRÓBUJ PONOWNIE";
+        btn.disabled = false;
+      });
+  };
 </script>
 	  
 </body></html>
