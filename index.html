@@ -184,19 +184,19 @@
 	  
 <section id="ankieta-sekcja" style="padding: 50px 0; background: #f5eee6;">
   <div style="max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;">
-    <h3 style="font-family: Cinzel, serif;">ANKIETA</h3>
+    <h3 style="font-family: Cinzel, serif; font-weight: bold">ANKIETA</h3> 
     <p>Będziemy wdzięczni za wypełnienie ankiety dla każdego osobno.<br> Nie obiecujemy, ale postaramy się spełnić wszystkie
                           Wasze preferencje jedzeniowe</p>
 
     <form id="wedding-form" style="text-align: left; margin-top: 30px;">
       
       <div style="margin-bottom: 15px;">
-        <label>Imię i Nazwisko</label>
+        <label><strong>Imię i Nazwisko</strong>strong></label>
         <input type="text" name="name" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required placeholder="Mariusz van Beethoven">
       </div>
 
       <div style="margin-bottom: 15px;">
-        <label>Świętujesz z nami?</label>
+        <label><strong>Świętujesz z nami?</strong>strong></label>
         <select name="obecny" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required>
           <option value="Tak">Tak</option>
           <option value="Nie">Nie</option>
@@ -204,7 +204,7 @@
       </div>
 
       <div style="margin-bottom: 15px;">
-        <label>Czy potrzebujesz transportu na miejsce Wesela?</label>
+        <label><strong>Czy potrzebujesz transportu na miejsce Wesela?</strong>strong></label>
         <select name="transport" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required>
           <option value="Tak">Tak</option>
           <option value="Nie">Nie</option>
@@ -212,7 +212,7 @@
       </div>
 
       <div style="margin-bottom: 15px;">
-        <label>Czy jesz mięso?</label>
+        <label><strong>Czy jesz mięso?</strong>strong></label>
         <select name="meat" style="width: 100%; padding: 10px; border: 1px solid #ccc;" required>
           <option value="Tak">Tak</option>
           <option value="Nie">Nie</option>
@@ -222,23 +222,50 @@
       </div>
 
       <div style="margin-bottom: 20px;">
-        <label>Masz alergie/nietolerancje?</label>
+        <label><strong>Masz alergie/nietolerancje?</strong>strong></label>
         <textarea name="allergies" style="width: 100%; padding: 10px; border: 1px solid #ccc;" rows="3"></textarea>
       </div>
 
       <div class="g-recaptcha" data-sitekey="6LdfFkgsAAAAABv-Ix7GLaJ2YZXDCLVpCs0MXkXI" style="margin-bottom: 20px;"></div>
 
-      <button type="submit" id="submit-btn" style="width: 100%; padding: 15px; background: #d4a373; color: white; border: none; cursor: pointer; font-weight: bold;">
-        Gotowe
-      </button>
+      <div style="text-align: center;">
+        <button type="submit" id="submit-btn" style="
+          width: 118px; 
+          height: 42px; 
+          background-color: #0f4516; 
+          color: white; 
+          border: none; 
+          border-radius: 20px; 
+          font-family: 'Lora', serif; 
+          font-weight: normal; 
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+        ">
+          Gotowe
+        </button>
 
     </form>
     
-    <div id="success-msg" style="display:none; color: green; font-weight: bold; margin-top: 20px;">
-      Dziękujemy! Widzimy się w Wiejcach!
-    </div>
+    <div id="success-msg" style="
+    display: none; 
+    color: #1a6321; 
+    font-weight: 800; 
+    font-size: 22px; 
+    margin-top: 30px; 
+    font-family: 'Lora', serif; 
+    text-align: center;
+    line-height: 1.4;
+">
+    Dzięki!<br>Widzimy się w Wiejcach!
+</div>
   </div>
 </section>
+	  
+<footer style="text-align: center; padding: 20px; font-family: 'Lora', serif; color: #0f4516;">
+  <p><strong>AG '26</strong></p>
+</footer>
+	  
 <script>
 
   document.getElementById('wedding-form').onsubmit = function(e) {
@@ -250,12 +277,12 @@
     // 1. Sprawdź reCAPTCHA
     const captcha = grecaptcha.getResponse();
     if (captcha.length === 0) {
-      alert("Proszę zaznaczyć 'Nie jestem robotem'!");
+      alert("Proszę zaznaczyć 'Nie jestem robotem'.");
       return;
     }
 
     // 2. Zmień wygląd przycisku
-    btn.innerText = "WYSYŁANIE...";
+    btn.innerText = "Chwilka";
     btn.disabled = true;
 
     // 3. Wyślij dane
