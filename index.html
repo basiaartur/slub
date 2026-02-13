@@ -5,28 +5,16 @@
     <meta charset="utf-8">
 	<meta name="robots" content="noindex, nofollow">
     <meta name="keywords" content="ŚlubBasi i Artura​">
-    <meta name="description" content="">
     <title>Ślub Basi i Artura</title>
+		
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="index.css" media="screen">
+	<link rel="stylesheet" href="index.css" media="screen">
+		
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 8.1.4, nicepage.com">
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+		
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Cinzel:wght@400;500;600;700;800;900&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700">
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1"
 }</script>
 
     <meta name="theme-color" content="#f5eee6">
@@ -85,7 +73,6 @@
 			Warto wziąć to pod uwagę przy wyborze kreacji, aby czuć się swobodnie przez całą noc.<br>
 			
 			<br>Najważniejsze jednak, abyście czuli się dobrze i komfortowo, świętując razem z nami ten wyjątkowy dzień.
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </p>
       </div>
     </section>
@@ -107,7 +94,6 @@
 			będziemy ogromnie wdzięczni za wsparcie naszej podróży marzeń.<br>
 			
 			<br>Dziękujemy za wyrozumiałość.
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </p>
       </div>
     </section>
@@ -148,7 +134,7 @@
               <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-sm u-container-layout-5"><span class="u-file-icon u-icon u-icon-5"><img src="/images/169947.png" alt=""></span>
                 <h4 class="u-text u-text-11">Ostatni Toast<br>
                 </h4>
-                <p class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-12">4:00</p>
+                <p class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-12">3:50</p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
@@ -270,18 +256,18 @@
     const btn = document.getElementById('submit-btn');
     const scriptURL = 'https://script.google.com/macros/s/AKfycbya73XvQWiOO_2I3UMqtQaUmIiKhakK2cBj3ge6OG4-C1fsIpMCQNAfL0Vi6hEmHC88/exec';
     
-    // 1. Sprawdź reCAPTCHA
+    // reCAPTCHA
     const captcha = grecaptcha.getResponse();
     if (captcha.length === 0) {
       alert("Proszę zaznaczyć 'Nie jestem robotem'.");
       return;
     }
 
-    // 2. Zmień wygląd przycisku
+    // Przycisk
     btn.innerText = "Chwilka";
     btn.disabled = true;
 
-    // 3. Wyślij dane
+    // Wysyłanie
     fetch(scriptURL, { method: 'POST', body: new FormData(this) })
       .then(res => {
         document.getElementById('success-msg').style.display = 'block';
